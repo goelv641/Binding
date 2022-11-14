@@ -1,3 +1,4 @@
-body {
-    color: blue;
+:root{
+    --heading: calc(vas(--base) * 5)   
+    --type-color: blue;
 }
