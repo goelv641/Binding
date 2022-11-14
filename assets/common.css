@@ -1,3 +1,24 @@
+:root{
+    --base: 16px;
+    --heading: calc(vas(--base) * 2)
+    font-family: sans-serif;
+    font-size: var(--base);    
+}
+
+@media (min-width: 600p) { ;
+    :root{
+        --base: 24px;
+    }
+}
+
 body {
-    color: brown;
+    padding: var(--base);
+}
+
+h1{
+    font-size: var(--heading);
+}
+
+p {
+max-width: 50ch;
 }
