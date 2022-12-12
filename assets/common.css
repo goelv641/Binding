@@ -2,30 +2,144 @@
     --base: 16px;
     --heading: calc(vas(--base) * 2)    
     --typecolor: darkgrey;
-
-    font-family: sans-serif;
+    font-family: 'space grotesk';
     font-size: var(--base);    
 }
 
-@media (min-width: 600p) {
-    :root{
-        --base: 24px;
-    }
+
+*{
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 
 body {
     padding: var(--base);
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    /* s */
 }
 
-h1{
-    font-size: var(--heading);
+header h1 {
+    /* position: fixed;
+    top: 0%; */
+    width: fit-content;
+    margin: auto;
+    /* --heading: calc(vas(--base) * 2) */
+   color: #00cd5f;
+   font-weight: bold;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
 }
 
 p {
-max-width: 50ch;
-color: var(--type-color)
+    /* color: var(--type-color) */
+    color: #00cd5f;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 a p {
     color: blue;
 }
+
+li {
+    background-color: #00cd5f;
+    padding: 30px 50px;
+    height: 150px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -55px;
+}
+
+nav {
+    position: fixed;
+    bottom: -40px;
+    left: 0%;
+    width: 100vw;
+}
+
+nav p {
+    color: white;
+    justify-content: center;
+}
+
+section main {
+    width: 100%;
+}
+
+section {
+    padding: 
+    0px 50px 400px 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 600px) {
+    :root{
+        --base: 24px;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0;
+        /* align-items: center; */
+        margin: 50px;
+        /* background-color: aquamarine; */
+    }
+
+    section main {
+        width: 48%;
+        /* background-color: bisque; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* margin: 20px; */
+        
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        /* align-items: center; */
+        height: 150px;
+        margin-top: -50px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .tag {
+        height: fit-content;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 10px 30px 10px 30px;
+        /* margin: 20px 2px; */
+
+    }
+
+    .navlink {
+        font-size: 34px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+}   
+
+
